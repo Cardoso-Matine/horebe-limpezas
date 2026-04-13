@@ -13,7 +13,11 @@ export default function App() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Obrigado pelo contacto! Entraremos em contacto em breve.');
+
+    const whatsappMessage = `Olá Horebe, gostaria de um orçamento grátis.\n\nNome: ${formData.name}\nEmail: ${formData.email}\nTelefone: ${formData.phone}\nServiço: ${formData.service}\nLocalização: ${formData.location}\nMensagem: ${formData.message}`;
+    const whatsappUrl = `https://wa.me/258876681940?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(whatsappUrl, '_blank');
     setFormData({ name: '', email: '', phone: '', service: '', location: '', message: '' });
   };
 
@@ -110,10 +114,7 @@ export default function App() {
                 </a>
               </div>
               <div className="mt-12 grid grid-cols-3 gap-8">
-                <div>
-                  <div className="text-3xl mb-2">500+</div>
-                  <div className="text-muted-foreground">Clientes Satisfeitos</div>
-                </div>
+
                 <div>
                   <div className="text-3xl mb-2">100%</div>
                   <div className="text-muted-foreground">Profissionalismo</div>
@@ -256,7 +257,7 @@ export default function App() {
                   <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="mb-1">Telefone / WhatsApp</h4>
-                    <p className="text-muted-foreground">+258 835469194</p>
+                    <p className="text-muted-foreground">+258 876681940</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -384,14 +385,14 @@ export default function App() {
             <p className="text-xl mb-6 opacity-90">Fale connosco hoje mesmo! Atendimento rápido e orçamento grátis!</p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="tel:+258835469194"
+                href="tel:+258876681940"
                 className="bg-white text-primary px-8 py-3 rounded-lg hover:opacity-90 transition-opacity inline-flex items-center gap-2"
               >
                 <Phone className="w-5 h-5" />
                 Ligar Agora
               </a>
               <a
-                href="https://wa.me/258835469194"
+                href="https://wa.me/258876681940"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white px-8 py-3 rounded-lg hover:opacity-90 transition-opacity inline-flex items-center gap-2"
@@ -442,12 +443,12 @@ export default function App() {
             <div>
               <h4 className="mb-4">Contacto</h4>
               <ul className="space-y-2 opacity-80">
-                <li>📱 +258 835469194</li>
+                <li>📱 +258 876681940</li>
                 <li>📧 horebelimpezas@gmail.com</li>
                 <li>📍 Maputo, Moçambique</li>
                 <li className="mt-4">
                   <a
-                    href="https://wa.me/258835469194"
+                    href="https://wa.me/258876681940"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
