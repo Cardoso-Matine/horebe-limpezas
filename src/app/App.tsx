@@ -127,7 +127,7 @@ export default function App() {
             </div>
             <div className="flex justify-center items-center">
               <img
-                src="/horebe image.jpeg"
+                src="/horebe-image.jpeg"
                 alt="Horebe Limpezas - Serviços Profissionais"
                 className="rounded-lg shadow-lg max-w-full h-auto"
               />
