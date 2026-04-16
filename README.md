@@ -1,11 +1,34 @@
+# Horebe Cleaning Services
 
-  # Sem título
+Institutional website for professional cleaning services and customer support.
 
-  This is a code bundle for Sem título. The original project is available at https://www.figma.com/design/SLWsBvB8rINTYNHAYKJENd/Sem-t%C3%ADtulo.
+## Overview
 
-  ## Running the code
+The project showcases a landing page featuring:
+- service sections;
+- a quotation form that opens a WhatsApp message;
+- direct contact via phone and WhatsApp;
+- a hero section with image and key information.
 
-  Run `npm i` to install the dependencies.
+## App Link
 
-  Run `npm run dev` to start the development server.
-  
+https://horebe-limpezas.vercel.app/
+
+## Technologies Used
+
+- React
+- Vite
+- Tailwind CSS
+- TypeScript
+
+## How to Run Locally
+
+1. Install dependencies:
+
+   `npm install`
+
+2. Start the development server:
+
+   `npm run dev`
+
+3. Open the address shown in the terminal, usually `http://localhost:5173`.
